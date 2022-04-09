@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 
 
@@ -237,4 +238,180 @@ footer{
     float: right;
     padding-right: 20px;
     color: aliceblue;
+=======
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+
+
+*{
+    font-family: 'nanumgothic';
+}
+
+body, h1, h2{
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu-bar-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #003975;
+}
+
+.language{
+    margin: 10px;
+    padding: 2.4px; 
+    background-color: #001a38;
+    color:aliceblue;
+    margin-right: auto;
+}
+
+.sign-in{
+    margin: 10px;
+    padding: 2.4px;
+    background-color: #3076d6;
+    color:aliceblue;
+    margin-right: auto;
+}
+
+.log-in{
+    margin: 10px;
+    padding: 2.4px;
+    background-color: #3076d6;
+    color:aliceblue;
+    margin-right: auto;
+}
+
+.menu-bar-main{
+    overflow: hidden;
+    background-color: #001a38;
+}
+
+.menu-bar-item{
+    float: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #001a38;
+}
+
+.menu-title{
+    margin-top: 25px;
+    padding-left: 50px;
+    font-size:x-large;
+    font-weight: 900;
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+    color: aliceblue;
+}
+
+.menu-item{
+    padding: 10px;
+    font-size: large;
+    margin-left: auto;
+    margin-right: auto;
+    color: aliceblue;
+}
+
+.banner-image{
+    width: 100%;
+    height: 100%;
+}
+
+h2{
+    padding: 10px;
+    padding-right: auto;
+    padding-left: auto;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+}
+
+h6{
+    color: #909194;
+}
+
+.main-items{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-items: center;
+    align-items: center;
+    border-top: 5px solid #001a38;
+}
+
+.notification{
+    display: flex;
+    flex-flow: column;
+    margin-top:auto;
+    justify-content: center;
+    align-content: center;
+}
+
+.promotion{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.notification-list{
+    display: flex;
+    align-self: auto;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.main-search{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly; 
+    align-content: center; 
+    width: 700px;
+    height: 70px;
+    margin: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;  
+    background-color: #f2cb49;
+    box-shadow: 0 1px 20px 0 rgba(0,0,0, 0.3);
+}
+
+.lecture-list{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly; 
+    align-content: center; 
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.lecture-box{
+    width: 200px;
+    height: 300px;
+    border: #909194 solid 1px;
+    box-shadow: 0 1px 20px 0 rgba(0,0,0, 0.1);
+}
+
+footer{
+    background-color: #001a38;
+    overflow: hidden;
+}
+
+.footer-title{
+    padding-left: 20px;
+    float: left;
+    color: aliceblue;
+    
+}
+
+.footer-private{
+    float: right;
+    padding-right: 20px;
+    color: aliceblue;
+>>>>>>> e4847c29842a998ab52703d5ad01b4de999fa4b7
 }
