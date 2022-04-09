@@ -12,10 +12,10 @@ body, h1, h2{
 }
 
 .menu-bar-top{
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
+    justify-items:flex-end;
     background-color: #003975;
 }
 
@@ -76,17 +76,21 @@ body, h1, h2{
     color: aliceblue;
 }
 
-.banner-image{
+.banner-img{
     width: 100%;
     height: 100%;
+    padding-left: auto;
+    padding-right: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 5px solid #001a38;
 }
 
 h2{
-    padding: 10px;
-    padding-right: auto;
+    /*padding-right: auto;
     padding-left: auto;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto;*/
     color: black;
 }
 
@@ -96,33 +100,93 @@ h6{
 
 .main-items{
     display: flex;
-    flex-flow: row nowrap;
-    justify-items: center;
-    align-items: center;
-    border-top: 5px solid #001a38;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: stretch;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    padding-top: 2%;
+    padding-left: auto;
+    padding-right: auto;
 }
 
 .notification{
     display: flex;
-    flex-flow: column;
-    margin-top:auto;
+    flex-flow: column wrap;
+    /*justify-content: flex-start;*/
+    /*align-content: flex-start;*/
+    flex-grow: 1;
+    max-width: 50%;
+    margin-right: 2%;
+}
+
+.notification-title{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+.notification-title-content{
+    display: flex;
+    flex-flow: row wrap;
+}
+.notification-date{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
     justify-content: center;
-    align-content: center;
+    width: 60px;
+    height: 60px;
+    border: #909194 solid 1px;
+    margin-right: 15px;
+}
+
+.notification-year{
+    color: #909194;
+    font-weight: bold;
+    font-size: small;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.notification-month{
+    color: #3076d6;
+    font-weight: bold;
+    font-size: x-large;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.notification-title-more{
+    font-size: small;
 }
 
 .promotion{
     display: flex;
     flex-flow: column wrap;
-    justify-content: center;
-    align-content: center;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-grow: 1;
+    max-width: 50%;
+}
+
+.promotion-text{
+    margin-bottom: 2%;
 }
 
 .notification-list{
     display: flex;
     align-self: auto;
     flex-direction: column;
-    align-content: center;
-    justify-content: space-around;
+    align-content: space-around;
+    justify-content: flex-start;
+}
+
+.notification-list-content{
+    margin: 2%
 }
 
 .main-search{
@@ -138,6 +202,7 @@ h6{
     padding: 10px;  
     background-color: #f2cb49;
     box-shadow: 0 1px 20px 0 rgba(0,0,0, 0.3);
+    border-radius: 10px;
 }
 
 .lecture-list{
