@@ -5,8 +5,22 @@
 <h3>본문</h3>
 {{ blog_detail.body}}
 
+<h3>본문에 추가된 첨부파일</h3>
 {% if blog_detail.photo %}
     <!-- 사진 찍어주기-->
     {{ blog_detail.photo.url }}
     <img src = "{{ blog_detail.photo.url }}" alt="" height="600">
 {% endif %}
+
+<h3>댓글</h3>
+<!-- 제출버튼을 누르면 url create_comment로 이동, blog_detail.id key값도 함께 제공-->
+<form method="POST" action="{% url 'create_comment' blog_detail.id %}">
+    {% csrf_token %}
+    {{ comment_form }}
+    <input type="submit">
+</form>
+
+{% for comment in blog_detail.comment_set.all %}
+<p>{{ comment }}</p>
+<hr>
+{% endfor %}
