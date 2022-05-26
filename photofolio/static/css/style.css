@@ -1,0 +1,21 @@
+.header {
+  padding-left: 1%;
+  padding-top: 0.01%;
+  padding-bottom: 0.01%;
+  text-align: left;
+  background: #4c385e;
+  color: white;
+  font-size: 20px;
+}
+
+/*
+.banner-img{
+  background-image: url("{% static 'img/love.jpg %}");
+}
+*/
+
+.comment{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
