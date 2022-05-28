@@ -12,15 +12,18 @@ def home(request):
 
 #블로그 글 작성 html을 보여주는 함수
 def new(request):
-    return render(request, 'new.html')
+    if request.method == 'GET':
+        return render(request, 'new.html')
+
 
 #블로그 글을 저장해주는 함수
 def create(request):
-    if (request.method == 'POST'):
+
+    if request.method == 'POST':
         post = Post()
         post.title = request.POST['title']
         post.body = request.POST['body']
-        post.photo = request.POST['photo']
+        post.photo = request.FILES.get('photo')
         post.date = timezone.now()
         post.save()
 

@@ -24,18 +24,16 @@
     <form method="POST" action="{% url 'create_comment' post_detail.id %}">
     <!--<form action="{% url 'create_comment' post_detail.id %}" method="POST" enctype="multipart/form-data">-->
         {% csrf_token %}
-        <!--
-        <p>
-            {{ form.as_p }}
-        </p>    -->
-        {{ comment_form.comment }}
-        <input type="submit" value="작성">
+        {{ comment_form }}
+        <!--<input type="text" placeholder="댓글을 적어주세요" name="comment" max_length="50">
+        <button type="submit">입력</button> -->
+        <input type="submit" value="입력">
     </form>
 
     {% for comment in post_detail.comment_set.all %}
     <!--<p>{{ comment.date }}</p>-->
     <div class="comment">
-        <div>{{ comment }}</div>
+        <div>{{ comment.comment }}</div>
         <div>{{ comment.date }}</div>
     </div>
     <hr>
