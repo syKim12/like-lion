@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+{% for club in clubs %}
+    <a href="{% url 'detail' club.id %}"><h3>제목: {{ club.name }}</h3></a>
+    <!--<h4>{{ post.author }}</h4>
+    <h4>작성 날짜: {{ post.date }}</h4>-->
+{% endfor %}
+<br/>
+
+<a href="{% url 'new' %}"><button>새 글 작성</button></a>
+<br>
+
+{% endblock %}

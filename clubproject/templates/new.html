@@ -1,0 +1,16 @@
+<form action = "{% url 'create' %}" method = "POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <div>
+        <label for="name">제목</label><br/>
+        <input type="text" name="name" id="name">
+    </div>
+    <div>
+        <label for="num_clubmember">본문</label><br/>
+        <textarea name="num_clubmember" id="num_clubmember" cols="30" rows="10"></textarea>
+    </div>
+    <div>
+        <label for="photo">사진</label><br/>
+        <input type="file" id="photo" name="photo">
+    </div>
+    <input type="submit" value="글 생성하기">
+</form>
