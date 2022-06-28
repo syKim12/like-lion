@@ -11,7 +11,7 @@ class Club(models.Model):
     photo = models.ImageField(blank=True, null=True, upload_to='photo')
     
     def __str__(self):
-        return self.title
+        return self.name
 
 class Comment(models.Model):
     comment = models.CharField(max_length=200)
