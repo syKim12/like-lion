@@ -8,7 +8,7 @@ def home(request):
     #sns 글들을 모조리 띄우는 코드
     #posts = Blog.objects.all()
     clubs = Club.objects.all()
-    return render(request, 'index.html')
+    return render(request, 'index.html', {'clubs':clubs})
 
 def detail(request, club_id):
     #blog_id 번째 블로그 글을 db에서 갖고와서 detail.html로 띄워주는 코드
